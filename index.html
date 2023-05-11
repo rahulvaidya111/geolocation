@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBON-MONKEY</title>
+    <link rel="icon" href="https://images.yourstory.com/cs/images/companies/1536719600627000023784915194386n-1582787530617.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homeStylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+        <div class="container-fluid">
+            <div class="icon">
+          <div class=text-icon><a class="navbar-brand h3" href="#">Urban</a></div>
+          <img id=icon-img src="https://i.ibb.co/T8kKN95/681034-middle.png" alt="icon-img">
+          <a class="navbar-brand text-white h3 p-1px" href="#">Monkey</a></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto h5 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">limited Stock</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Collection
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Hat</a></li>
+                  <li><a class="dropdown-item" href="#">Jeans</a></li>
+                  <li><a class="dropdown-item" href="#">T-shirt</a></li>
+                  <li><a class="dropdown-item" href="#">Googles</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Global Brands</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search........." aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+              <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+            </form>
+          </div>
+        </div>
+        <!-- geo-locationgeo-location -->
+        <div class="">
+        <button class="location" onClick="geolocation()">Get Location</button>
+        <p id="out"></p>
+        <p id="weather"></p>
+      </div>
+         <!-- pop up -->
+    <div class="popup">
+      <div class="contentBox">
+          <div class="close"></div>
+         <div class="imgBx">
+           <img src="./images/gift.svg" alt="gift icon">
+         </div>
+         <div class="content">
+          <div>
+              <h3>Special Offer</h3>
+              <h2>25<sup>%</sup> <span>Off</span></h2>
+                 <p> Hurry Up To Win Prizes <br>
+                   Use This Code 997599</p>
+                  <a href="#"> Get The Deal</a>
+          </div>
+         </div>
+      </div>
+  </div> <!-- pop up -->
+  <div class="popup">
+    <div class="contentBox">
+        <div class="close"></div>
+       <div class="imgBx">
+         <img src="./images/gift.svg" alt="gift icon">
+       </div>
+       <div class="content">
+        <div>
+            <h3>Special Offer</h3>
+            <h2>25<sup>%</sup> <span>Off</span></h2>
+               <p> Hurry Up To Win Prizes <br>
+                 Use This Code 997599</p>
+                <a href="#"> Get The Deal</a>
+        </div>
+       </div>
+    </div>
+</div>
+      </nav>
+      <div class="slide">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cdn.shopify.com/s/files/1/0661/7423/files/denim-new-launch-desk_4e5a8cd9-2a2c-4283-b304-af3506fdfdf3.jpg?v=1680253444&width=2000" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.ibb.co/4gmcqX2/HD-wallpaper-monkey-swag2-monkey-swag.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/GWUnrec_BOB/WA3000._CB592962828_.jpg" class="d-block w-100 h-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+   
+
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/coffee-break-02.jpg?v=1678259501&width=400" alt="Img"></div>
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/um-training-006-03_08ab46d1-b227-448a-a6c8-73d970f21ae4.jpg?v=1676623000&width=400" alt="Img"></div>
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/um-archives-001-10.jpg?v=1671451765&width=400" alt="Img"></div>
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/super-suede-001-left.jpg?v=1637130553&width=400" alt="Img"></div>
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/keychain_010_abc409bc-9767-4e3c-ad83-6cdb4db5fa93.jpg?v=1646389486&width=400" alt="Img"></div>
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/neon-fanny-pack-front_5871a6de-d2ef-49c8-a5d2-3d93b47dc1d6.jpg?v=1622440838&width=400" alt="Img"></div>
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/wallet-009-with-packaging.jpg?v=1655542008&width=400" alt="Img"></div>
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/gg-um-super-wallet-front.jpg?v=1618487277&width=400" alt="Img"></div>
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/wallet-008-with-packaging.jpg?v=1655542004&width=400" alt="Img"></div>
+      <div class="item"><img src="https://cdn.shopify.com/s/files/1/0661/7423/products/MG_6042.jpg?v=1615367483&width=400" alt="Img"></div>
+      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwnO2zfHXCWPxJ7gFPcm_iVKJ6Gkm9U1ci4w&usqp=CAU" alt="Img"></div>   
+      </div>
+      <!-- Other Product list -->
+    <div class="gallery">
+      <div class="content">
+        <img src="https://cdn.shopify.com/s/files/1/0661/7423/products/letterman-varsity-jacket-model-1.jpg?v=1664256955&width=400" alt="">
+        <h3>SPACED OUT</h3>
+        <p></p>
+        <h6>Rs-3,990</h6>
+        <!-- <ul>
+          <li><i class="bi bi-star-fill"></i></li>
+          <li><i class="bi bi-star-fill"></i></li>
+          <li><i class="bi bi-star-fill"></i></li>
+          <li><i class="bi bi-star-fill"></i></li>
+          <i class="bi bi-star-half"></i>
+        </ul> -->
+        <button class="buy-1">Buy Now</button>
+      </div>
+      <div class="content">
+        <div class="gallaryimg">
+        <img src="https://cdn.shopify.com/s/files/1/0661/7423/products/hyper-functional-bomber-jacket-model-5.jpg?v=1664257000&width=330" alt=""></div>
+        <h3>LETTERMAN</h3>
+        <p></p>
+        <h6>Rs-1,240</h6>
+        <!-- <ul>
+          <li><i class="fa-sharp fa-solid fa-star"></i></li>
+          <li><i class="fa-sharp fa-solid fa-star"></i></li>
+          <li><i class="fa-sharp fa-solid fa-star"></i></li>
+          <li><i class="fa-sharp fa-solid fa-star"></i></li>
+          <li><i class="fa-sharp fa-solid fa-star"></i></li>
+        </ul> -->
+        <button class="buy-1">Buy Now</button>
+      </div>
+      <div class="content">
+        <img src="https://cdn.shopify.com/s/files/1/0661/7423/products/dropout-bomber-jacket-model-7.jpg?v=1664257008&width=330" alt="">
+        <h3>HYPR-FUNCTIONAL</h3>
+        <p></p>
+        <h6>Rs-4,999</h6>
+        <!-- <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul> -->
+        <button class="buy-1">Buy Now</button>
+      </div>
+      <div class="content">
+        <img src="https://cdn.shopify.com/s/files/1/0661/7423/products/frat-boy-varisty-jacket-model-2.jpg?v=1663741299&width=330" alt="">
+        <h3>GRADUATION</h3>
+        <p></p>
+        <h6>Rs-3,999</h6>
+        <!-- <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul> -->
+        <button class="buy-1">Buy Now</button>
+      </div>
+      <div class="content">
+        <img src="https://cdn.shopify.com/s/files/1/0661/7423/products/MG_6042.jpg?v=1615367483&width=400" alt="">
+        <h3>THE CLASSIC BAG</h3>
+        <p></p>
+        <h6>Rs-400</h6>
+        <ul>
+          <!-- <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul> -->
+        <button class="buy-1">Buy Now</button>
+      </div>
+      <div class="content">
+        <img src="https://cdn.shopify.com/s/files/1/0661/7423/products/the-truffle-bag-royal-blue-front.jpg?v=1616140980&width=400" alt="">
+        <h3>TRUFFLE BAG - ROYAL BLUE</h3>
+        <p></p>
+        <h6>Rs-2,000</h6>
+        <!-- <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul> -->
+        <button class="buy-1">Buy Now</button>
+      </div>
+      <div class="content">
+        <img src="https://cdn.shopify.com/s/files/1/0661/7423/products/MG_6024.jpg?v=1615367484&width=400" alt="">
+        <h3>THE CLASSIC BAG</h3>
+        <p></p>
+        <h6>Rs-1,599</h6>
+        <!-- <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul> -->
+        <button class="buy-1">Buy Now</button>
+      </div>
+      <div class="content">
+        <img src="https://cdn.shopify.com/s/files/1/0661/7423/products/Lifefront.jpg?v=1646914736&width=400" alt="">
+        <h3>BLACK SHEEP FACE MASK</h3>
+        <p>PERFECT FACE MASK</p>
+        <h6>Rs-99</h6>
+        <!-- <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul> -->
+        <button class="buy-1">Buy Now</button>
+      </div>
+    </div>
+    
+   
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>COMPANY</h4>
+                  <ul>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Our service</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                      <li><a href="#">affiliate program</a></li>
+                  </ul>  
+              </div>
+              <div class="footer-col">
+                  <h4>Get help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Shippping</a></li>
+                      <li><a href="#">Return</a></li>
+                      <li><a href="#">order status</a></li>
+                      <li><a href="#">payment option</a></li>
+                  </ul>  
+              </div>
+              <div class="footer-col">
+                  <h4>Online shop</h4>
+                  <ul>
+                      <li><a href="#">Smart Watch</a></li>
+                      <li><a href="#">Googles</a></li>
+                      <li><a href="#">T-shirts</a></li>
+                      <li><a href="#">Stylesh Hat</a></li>
+                  </ul>  
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-link">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div> 
+              </div>
+          </div>
+      </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:false,
+  dots:false,
+  autoplay:true,
+  autoplaytimeout: 1000,
+  responsive:{
+      0:{
+          items:2
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      },
+      1400:{
+          items:5
+      },
+  }
+})
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+
+toggle.addEventListener('click', function(){
+  this.classList.toggle('bi-moon');
+  if(this.classList.toggle('bi-brightness-high-fill')){
+    body.style.background = 'white';
+    body.style.color = 'grey';
+    body.style.transition = '2s';
+  }else{
+    body.style.background = 'grey';
+    body.style.color = 'white';
+    body.style.transition = '2s';
+  }
+})
+const popup = document.querySelector('.popup');
+const close = document.querySelector('.close');
+ window.onload = function () {
+    setTimeout(function(){
+        popup.style.display = "block";
+    },2000)
+ }
+ close.addEventListener('click', () => {
+    popup.style.display = "none";
+ })
+ let x = document.getElementById('out');
+            let y = document.getElementById('weather');
+            function geolocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                }else{
+                    x.innerText="Geo Not Supported"
+                }
+            }
+
+            function showPosition(data){
+                console.log(data)
+                let lat = data.coords.latitude
+                let lon = data.coords.longitude
+                x.innerText = `Latitude is ${lat} and longitude is ${lon}`
+                const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+                //api calling
+                fetch(url,{method: 'GET'})
+                //return promise
+                .then((res) =>res.json())
+                //resolve the promise
+                .then((data) => {
+                    console.log(data)
+                    let cityName = data.city.name;
+                    let temp = data.list[0].temp.day+" °C"
+                    y.innerText = `Weather of ${cityName} is ${temp}`
+                })
+            }
+  </script>
+  
+</body>
+</html>
